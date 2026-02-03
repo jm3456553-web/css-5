@@ -1,0 +1,33 @@
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적용순서</title>
+    <style>
+        *{color: red;
+        }
+        h1{
+            color: green;
+        }
+        .text{
+            color: blue;
+        }
+        #high{
+            color: coral;
+        }
+        h2{
+            color: blue;
+            color: yellow;
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text" id="high" style="color: grey;">우선순위가 가장 높은 것은 무엇일까요?</h1>
+    <h2>누가 마지막에 적용될까?!</h2>
+</body>
+<!--1순위 : 인라인에 직접 속성값을 주기. 2순위 : #id 3순위 : .클래스명 4순위 : 태그선택자 5순위 : 별 태그(전체선택)
+태그 선택자에 같은 속성이 여러개 있으면 맨 마지막에 주어진 속성값을 인식한다. 예시: 클래스가 먼저, P태그가 먹히지 않음.-->
+</html>
+</body>
